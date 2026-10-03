@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KV Home Construction LLC — Tampa, FL</title>
+<meta name="description" content="Contratista general en Tampa, FL. Construcción de casas, remodelaciones, piscinas y cocinas exteriores. Cotización gratis.">
+<style>
+  :root{ --ink:#16181D; --ink2:#23262D; --orange:#F26522; --orange-d:#D1541A; --steel:#9AA1AD; --bg:#F4F4F2; --white:#fff; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  h1,h2,h3{font-family:'Arial Black','Segoe UI',sans-serif;letter-spacing:.5px}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;z-index:50;background:rgba(22,24,29,.97);color:#fff}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+  .logo{font-family:'Arial Black',sans-serif;font-size:1.15rem;letter-spacing:1px}
+  .logo span{color:var(--orange)}
+  .navlinks{display:flex;gap:20px;align-items:center;font-size:.92rem}
+  .navlinks a{text-decoration:none;opacity:.9}
+  .navlinks a:hover{color:var(--orange)}
+  .lang{background:transparent;border:1px solid var(--orange);color:var(--orange);border-radius:20px;padding:5px 14px;cursor:pointer;font-weight:700;font-size:.85rem}
+  .btn{display:inline-block;background:var(--orange);color:#fff!important;font-weight:800;text-decoration:none;border-radius:6px;padding:13px 30px;font-size:1rem;border:none;cursor:pointer;transition:transform .15s;text-transform:uppercase;letter-spacing:.5px}
+  .btn:hover{transform:translateY(-2px);background:var(--orange-d)}
+  .btn.ghost{background:transparent;border:2px solid #fff;color:#fff!important}
+  .btn.dark{background:var(--ink);color:#fff!important}
+  @media(max-width:720px){.navlinks a.hid{display:none}.logo{font-size:.95rem}.navlinks{gap:12px}}
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff}
+  .hero .bg{position:absolute;inset:0;background:url('imgs/casa-nueva.jpg') center/cover}
+  .hero .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,12,.94) 5%,rgba(10,10,12,.3) 60%,rgba(10,10,12,.45))}
+  .hero .wrap{position:relative;padding:90px 20px 70px;width:100%}
+  .hero .bar{width:72px;height:6px;background:var(--orange);margin-bottom:16px}
+  .hero h1{font-size:clamp(2rem,5.6vw,3.6rem);line-height:1.1;margin-bottom:12px;text-transform:uppercase}
+  .hero h1 span{color:var(--orange)}
+  .hero p.lead{font-size:clamp(1.02rem,2.4vw,1.3rem);max-width:620px;margin-bottom:24px;color:#E8E8E6}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .stars{margin-top:18px;color:#E8E8E6}
+  .stars b{color:var(--orange)}
+  .strip{background:var(--orange);color:#fff;text-align:center;padding:15px 10px;font-weight:700;font-size:.95rem;letter-spacing:.5px}
+  section{padding:64px 0;scroll-margin-top:64px}
+  .kicker{color:var(--orange-d);font-weight:800;letter-spacing:3px;font-size:.8rem;text-transform:uppercase;margin-bottom:8px}
+  h2{font-size:clamp(1.6rem,4vw,2.3rem);text-transform:uppercase;margin-bottom:10px}
+  .sec-sub{color:#5b6068;max-width:640px;margin-bottom:32px;font-size:1.02rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.1);border-top:5px solid var(--orange);transition:transform .2s}
+  .card:hover{transform:translateY(-5px)}
+  .card img{height:200px;width:100%;object-fit:cover}
+  .card .body{padding:20px}
+  .card h3{font-size:1.15rem;margin-bottom:6px;text-transform:uppercase}
+  .card p{font-size:.93rem;color:#5b6068}
+  .why{background:var(--ink);color:#E8E8E6}
+  .why h2{color:#fff}
+  .why .sec-sub{color:var(--steel)}
+  .why .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px;margin-top:6px}
+  .witem .n{font-family:'Arial Black',sans-serif;font-size:2.4rem;color:var(--orange)}
+  .witem h3{font-size:1.05rem;margin:6px 0;text-transform:uppercase}
+  .witem p{font-size:.92rem;color:var(--steel)}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .gallery img{border-radius:8px;height:210px;width:100%;object-fit:cover;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+  .cta-band{background:var(--orange);color:#fff;text-align:center;padding:52px 20px}
+  .cta-band h2{margin-bottom:8px}
+  .cta-band p{margin-bottom:22px;font-size:1.05rem}
+  .cta-band .btn{background:#fff;color:var(--orange-d)!important}
+  .visit .vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:10px}
+  .vcard{background:#fff;border-radius:10px;padding:26px;box-shadow:0 6px 18px rgba(0,0,0,.08);border-top:5px solid var(--ink)}
+  .vcard h3{margin-bottom:10px;font-size:1.1rem;text-transform:uppercase}
+  .vcard p{font-size:.95rem;color:#5b6068}
+  .vcard .qr{display:flex;gap:14px;margin-top:14px;align-items:center}
+  .vcard .qr img{width:86px;height:86px;border-radius:8px;border:2px solid #eee}
+  .vcard .qr small{font-size:.8rem;color:#8a8f98}
+  footer{background:var(--ink);color:var(--steel);text-align:center;padding:34px 20px;font-size:.9rem}
+  footer .logo{margin-bottom:8px;color:#fff}
+  .wa-float{position:fixed;bottom:22px;right:22px;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:60}
+  .wa-float svg{width:32px;height:32px;fill:#fff}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">KV <span>HOME CONSTRUCTION</span></div>
+    <div class="navlinks">
+      <a class="hid" href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
+      <a class="hid" href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a class="hid" href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      <button class="lang" onclick="toggleLang()"><span id="l-es" style="opacity:1">ES</span> | <span id="l-en" style="opacity:.45">EN</span></button>
+      <a class="btn" style="padding:8px 20px" href="tel:+18132916300">📞 <span data-es="Llamar" data-en="Call">Llamar</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="bg"></div><div class="shade"></div>
+  <div class="wrap">
+    <div class="bar"></div>
+    <h1 data-es="Construimos y remodelamos <span>tu hogar</span> en Tampa" data-en="We build and remodel <span>your home</span> in Tampa">Construimos y remodelamos <span>tu hogar</span> en Tampa</h1>
+    <p class="lead" data-es="Contratista general: construcción de casas, remodelaciones, piscinas y cocinas exteriores. Cotización gratis, trato directo con el dueño." data-en="General contractor: home construction, remodeling, pools and outdoor kitchens. Free quote, direct dealing with the owner.">Contratista general: construcción de casas, remodelaciones, piscinas y cocinas exteriores. Cotización gratis, trato directo con el dueño.</p>
+    <div class="cta-row">
+      <a class="btn" href="https://wa.me/18132916300?text=Hola%20KV%20Home%20Construction%2C%20quiero%20una%20cotizaci%C3%B3n%20gratis" target="_blank" data-es="💬 Cotización gratis por WhatsApp" data-en="💬 Free quote on WhatsApp">💬 Cotización gratis por WhatsApp</a>
+      <a class="btn ghost" href="#proyectos" data-es="Ver proyectos" data-en="See projects">Ver proyectos</a>
+    </div>
+    <div class="stars">★ <b>5.0</b> <span data-es="en Google · Contratista general · Tampa, FL" data-en="on Google · General contractor · Tampa, FL">en Google · Contratista general · Tampa, FL</span></div>
+  </div>
+</header>
+
+<div class="strip" data-es="ABIERTO 24 HORAS · COTIZACIÓN GRATIS · (813) 291-6300" data-en="OPEN 24 HOURS · FREE QUOTE · (813) 291-6300">ABIERTO 24 HORAS · COTIZACIÓN GRATIS · (813) 291-6300</div>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="kicker" data-es="Servicios" data-en="Services">Servicios</div>
+    <h2 data-es="Lo que hacemos" data-en="What we do">Lo que hacemos</h2>
+    <p class="sec-sub" data-es="Del cimiento al acabado: un solo contratista para todo tu proyecto." data-en="From foundation to finish: one contractor for your whole project.">Del cimiento al acabado: un solo contratista para todo tu proyecto.</p>
+    <div class="grid">
+      <div class="card">
+        <img src="imgs/casa-nueva.jpg" alt="Construcción de casas">
+        <div class="body">
+          <h3 data-es="Construcción de casas" data-en="Home construction">Construcción de casas</h3>
+          <p data-es="Casas nuevas de bloque y concreto, construidas para durar en Florida." data-en="New block and concrete homes, built to last in Florida.">Casas nuevas de bloque y concreto, construidas para durar en Florida.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imgs/obra.jpg" alt="Remodelaciones">
+        <div class="body">
+          <h3 data-es="Remodelaciones" data-en="Remodeling">Remodelaciones</h3>
+          <p data-es="Renovamos cocinas, baños y espacios completos a tu medida." data-en="We renovate kitchens, bathrooms and full spaces to your specs.">Renovamos cocinas, baños y espacios completos a tu medida.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imgs/piscina-obra.jpg" alt="Piscinas">
+        <div class="body">
+          <h3 data-es="Piscinas" data-en="Pools">Piscinas</h3>
+          <p data-es="Construcción de piscinas de concreto desde cero." data-en="Concrete pool construction from the ground up.">Construcción de piscinas de concreto desde cero.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imgs/cocina-exterior.jpg" alt="Cocinas exteriores">
+        <div class="body">
+          <h3 data-es="Cocinas exteriores" data-en="Outdoor kitchens">Cocinas exteriores</h3>
+          <p data-es="Cocinas de exterior con parrilla, fregadero y acabados en piedra." data-en="Outdoor kitchens with grill, sink and stone finishes.">Cocinas de exterior con parrilla, fregadero y acabados en piedra.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="kicker" data-es="Por qué KV" data-en="Why KV">Por qué KV</div>
+    <h2 data-es="Directo, cumplido y sin vueltas" data-en="Direct, reliable, no runaround">Directo, cumplido y sin vueltas</h2>
+    <p class="sec-sub" data-es="Trabajamos como nos gustaría que trabajaran para nosotros." data-en="We work the way we'd want someone to work for us.">Trabajamos como nos gustaría que trabajaran para nosotros.</p>
+    <div class="grid2">
+      <div class="witem"><div class="n">01</div><h3 data-es="Cotización gratis" data-en="Free quote">Cotización gratis</h3><p data-es="Visitamos, medimos y te damos precio claro antes de empezar." data-en="We visit, measure and give you a clear price before starting.">Visitamos, medimos y te damos precio claro antes de empezar.</p></div>
+      <div class="witem"><div class="n">02</div><h3 data-es="Trato directo" data-en="Direct dealing">Trato directo</h3><p data-es="Hablas con el dueño, no con un call center." data-en="You talk to the owner, not a call center.">Hablas con el dueño, no con un call center.</p></div>
+      <div class="witem"><div class="n">03</div><h3 data-es="Disponible 24/7" data-en="Available 24/7">Disponible 24/7</h3><p data-es="Abierto las 24 horas para emergencias y consultas." data-en="Open 24 hours for emergencies and questions.">Abierto las 24 horas para emergencias y consultas.</p></div>
+      <div class="witem"><div class="n">04</div><h3 data-es="Hecho en Tampa" data-en="Tampa made">Hecho en Tampa</h3><p data-es="Conocemos los códigos y el clima de Florida." data-en="We know Florida codes and weather.">Conocemos los códigos y el clima de Florida.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="wrap">
+    <div class="kicker" data-es="Proyectos" data-en="Projects">Proyectos</div>
+    <h2 data-es="Trabajo real, fotos reales" data-en="Real work, real photos">Trabajo real, fotos reales</h2>
+    <p class="sec-sub" data-es="Una muestra de nuestras obras en Tampa." data-en="A sample of our work in Tampa.">Una muestra de nuestras obras en Tampa.</p>
+    <div class="gallery">
+      <img src="imgs/casa-piscina.jpg" alt="Casa con piscina">
+      <img src="imgs/casa-nueva.jpg" alt="Casa nueva">
+      <img src="imgs/piscina-obra.jpg" alt="Piscina en construcción">
+      <img src="imgs/cocina-exterior.jpg" alt="Cocina exterior">
+      <img src="imgs/obra.jpg" alt="Obra en construcción">
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <h2 data-es="¿Tienes un proyecto en mente?" data-en="Have a project in mind?">¿Tienes un proyecto en mente?</h2>
+    <p data-es="Escríbenos por WhatsApp y te cotizamos gratis." data-en="Message us on WhatsApp for a free quote.">Escríbenos por WhatsApp y te cotizamos gratis.</p>
+    <a class="btn" href="https://wa.me/18132916300?text=Hola%20KV%20Home%20Construction%2C%20quiero%20una%20cotizaci%C3%B3n%20gratis" target="_blank" data-es="💬 Pedir cotización gratis" data-en="💬 Get a free quote">💬 Pedir cotización gratis</a>
+  </div>
+</div>
+
+<section id="contacto" class="visit">
+  <div class="wrap">
+    <div class="kicker" data-es="Contacto" data-en="Contact">Contacto</div>
+    <h2 data-es="Hablemos de tu proyecto" data-en="Let's talk about your project">Hablemos de tu proyecto</h2>
+    <div class="vgrid">
+      <div class="vcard">
+        <h3>📍 <span data-es="Dirección" data-en="Address">Dirección</span></h3>
+        <p>2102 W Farwell Dr<br>Tampa, FL 33603</p>
+        <div style="margin-top:14px"><a class="btn dark" style="padding:10px 22px;font-size:.9rem" href="https://www.google.com/maps/search/?api=1&query=KV+home+construction+LLC+2102+W+Farwell+Dr+Tampa+FL+33603" target="_blank" data-es="Cómo llegar" data-en="Get directions">Cómo llegar</a></div>
+        <div class="qr"><img src="qr/qr-maps.png" alt="QR mapa"><small data-es="Escanea para abrir el mapa" data-en="Scan to open the map">Escanea para abrir el mapa</small></div>
+      </div>
+      <div class="vcard">
+        <h3>📞 <span data-es="Teléfono" data-en="Phone">Teléfono</span></h3>
+        <p><a href="tel:+18132916300" style="font-weight:800;color:var(--ink);text-decoration:none">(813) 291-6300</a></p>
+        <p style="margin-top:6px" data-es="Abierto las 24 horas" data-en="Open 24 hours">Abierto las 24 horas</p>
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" style="padding:10px 22px;font-size:.9rem" href="tel:+18132916300" data-es="Llamar" data-en="Call">Llamar</a>
+          <a class="btn dark" style="padding:10px 22px;font-size:.9rem" href="https://wa.me/18132916300" target="_blank">WhatsApp</a>
+        </div>
+        <div class="qr"><img src="qr/qr-web.png" alt="QR página web"><small data-es="Escanea para guardar esta página" data-en="Scan to save this page">Escanea para guardar esta página</small></div>
+      </div>
+      <div class="vcard">
+        <h3>🎵 TikTok</h3>
+        <p data-es="Mira nuestros trabajos en video." data-en="Watch our work on video.">Mira nuestros trabajos en video.</p>
+        <div style="margin-top:14px"><a class="btn dark" style="padding:10px 22px;font-size:.9rem" href="https://www.tiktok.com/@kvconqewsh6" target="_blank">@kvconqewsh6</a></div>
+        <div class="qr"><img src="qr/qr-review.png" alt="QR reseña"><small data-es="¿Te gustó el trabajo? Déjanos tu reseña" data-en="Liked the work? Leave a review">¿Te gustó el trabajo? Déjanos tu reseña</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">KV <span>HOME CONSTRUCTION</span> LLC</div>
+  <div>2102 W Farwell Dr, Tampa, FL 33603 · (813) 291-6300</div>
+  <div style="margin-top:6px;opacity:.7" data-es="Demo de muestra — fotos reales del perfil del negocio" data-en="Sample demo — real photos from the business profile">Demo de muestra — fotos reales del perfil del negocio</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/18132916300?text=Hola%20KV%20Home%20Construction%2C%20quiero%20una%20cotizaci%C3%B3n%20gratis" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.5 1.1 1.2-4.4-.3-.4c-1-1.6-1.6-3.5-1.6-5.5C5.1 9.4 10.1 4.9 16 4.9S26.9 9.9 26.9 15.9 21.9 24.8 16 24.8zm5.4-8.1c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.4c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script>
+let lang='es';
+function toggleLang(){
+  lang = lang==='es' ? 'en' : 'es';
+  document.querySelectorAll('[data-es]').forEach(el=>{ el.innerHTML = el.dataset[lang]; });
+  document.getElementById('l-es').style.opacity = lang==='es' ? '1' : '.45';
+  document.getElementById('l-en').style.opacity = lang==='en' ? '1' : '.45';
+  document.documentElement.lang = lang;
+}
+</script>
+</body>
+</html>
